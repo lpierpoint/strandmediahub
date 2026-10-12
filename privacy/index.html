@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strand Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --rule:#e5e5ea; --accent:#0a6cff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111113; --fg:#f5f5f7; --muted:#a1a1a6; --rule:#2c2c2e; --accent:#4a9dff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 80px; }
+  h1 { font-size:34px; line-height:1.2; margin:0 0 4px; }
+  h2 { font-size:21px; margin:40px 0 8px; padding-top:24px; border-top:1px solid var(--rule); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); font-size:15px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:15px; margin:12px 0; }
+  th, td { text-align:left; vertical-align:top; padding:8px 8px 8px 0; border-bottom:1px solid var(--rule); }
+  th { color:var(--muted); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+<p class="muted"><a href="../">Strand Support</a></p>
+<h1>Strand Privacy Policy</h1>
+<p class="muted">Last updated: 2 October 2026</p>
+
+<p>Strand is a video player for iPhone, iPad, Mac, Apple TV and Apple Vision Pro. It plays media from servers, shares and TV providers that you connect yourself. This policy explains what information leaves your device when you use Strand, where it goes, and the choices you have.</p>
+
+<p><strong>The short version:</strong> Strand has no accounts and no advertising, and it never sells or shares your data for tracking. The developer does not run a server that stores your library, your viewing history or your passwords. The only information the developer receives is anonymous usage statistics, which you can turn off, and a diagnostic log if you choose to send one.</p>
+
+<h2>Anonymous usage statistics</h2>
+<p>Strand uses <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a> to count how the app is used and how often playback succeeds. These statistics are anonymous and are not linked to you. They include things like the app version, device model, operating system version, language, which features were used (for example, that playback started on a media server), how long a channel took to start, and why playback failed. They never include the titles you watch, your searches, server addresses, playlists, usernames or passwords. The identifier that groups statistics from one device is a one-way hash, so it cannot be traced back to you or your device.</p>
+<p>You can turn this off at any time in Settings. When it is off, nothing is sent.</p>
+
+<h2>Diagnostic logs you choose to send</h2>
+<p>If you use <em>Send Log to Developer</em> in Settings, Strand sends the app's recent playback log so a problem can be investigated. A log can contain the names of titles you played, server and channel names, and technical details about your device and network. Strand removes the passwords and access tokens it recognises before a log is sent. Logs are stored in the developer's iCloud container and are only used to fix problems. Nothing is sent unless you choose to send it.</p>
+
+<h2>Information stored on your device and in your iCloud</h2>
+<p>Your settings, Home screen layout, connected servers and providers, watch history, favourites and resume points are stored on your device. If you are signed in to iCloud, Strand also keeps a copy in <strong>your own private iCloud storage</strong> so your devices stay in step. This data is protected by your Apple Account; the developer cannot see it. Some sign-in details for connected services are stored in your device's Keychain, which iCloud Keychain may sync between your devices. You can stop iCloud syncing in Settings, or for Strand in your device's iCloud settings, and you can remove everything by deleting the app.</p>
+
+<h2>Services you connect</h2>
+<p>When you connect your own media server (such as Jellyfin, Emby or Plex), a WebDAV share, a TV provider, a recording server, or a tracking service (such as Trakt or Simkl), Strand talks to that service directly, using the details you entered. What those services receive — for example, what you are watching, so they can save your progress — is governed by their own privacy policies. Strand only contacts them because you asked it to.</p>
+
+<h2>Public information services</h2>
+<p>To show artwork, cast, ratings, episode guides, subtitles and intro times, Strand asks public databases for information about the titles in your library. These requests contain the title's identifier or name (and the search text when you search), along with your device's IP address, which any internet request reveals. They do not contain your name or account details.</p>
+<table>
+  <tr><th>Service</th><th>Used for</th></tr>
+  <tr><td><a href="https://www.themoviedb.org/privacy-policy">TMDB</a></td><td>Artwork, details, cast, search</td></tr>
+  <tr><td><a href="https://thetvdb.com/privacy-policy">TheTVDB</a></td><td>Episode lists and numbering</td></tr>
+  <tr><td><a href="https://mdblist.com">MDBList</a>, IMDb, JustWatch</td><td>Ratings, age ratings and where-to-watch details</td></tr>
+  <tr><td><a href="https://www.opensubtitles.com/en/privacy">OpenSubtitles</a> and other subtitle services you add</td><td>Finding subtitles in your language</td></tr>
+  <tr><td>TheIntroDB, IntroDB</td><td>Skip Intro and Skip Recap times</td></tr>
+  <tr><td>Wikidata, Wikimedia Commons</td><td>Photos of cast members when no other is available</td></tr>
+  <tr><td>ESPN, TheSportsDB</td><td>Scores and fixtures, only if you add sports to your Home screen</td></tr>
+  <tr><td>Trailer services, YouTube, Apple TV app pages</td><td>Trailers, only when you play one or turn on trailer previews</td></tr>
+  <tr><td>Poster services you choose (for example RPDB)</td><td>Alternative poster artwork, only if you turn it on</td></tr>
+</table>
+
+<h2>Apple services</h2>
+<ul>
+  <li><strong>Song identification</strong> uses Apple's ShazamKit. To name a song, Strand sends Apple an audio fingerprint of what is playing — never a recording, and never your microphone. Apple's privacy policy applies.</li>
+  <li><strong>Saving a song to Apple Music</strong> asks for your permission first, and adds the song to a playlist in your own library.</li>
+  <li><strong>AirPlay and Picture in Picture</strong> are handled by your device.</li>
+</ul>
+
+<h2>Casting (iPhone and iPad)</h2>
+<p>Strand includes the Google Cast SDK so you can send Live TV to a Chromecast. The SDK looks for Cast devices on your local network. Strand turns off the SDK's own usage reporting.</p>
+
+<h2>Permissions</h2>
+<p>Strand may ask for access to your <strong>local network</strong> (to find and play from servers and Cast devices at home), <strong>Bluetooth</strong> (used by the casting SDK), <strong>notifications</strong> (for episode, programme and sports reminders you set) and <strong>Apple Music</strong> (only when you save a song). It does not use your location, camera, microphone, contacts or photos.</p>
+
+<h2>Children</h2>
+<p>Strand is not directed at children and does not knowingly collect information from them. Kids Mode lets a parent limit what is shown on a device; its settings stay on that device and in the parent's iCloud.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted here with a new date. Questions or requests: <a href="mailto:strandmediahub@hotmail.com">strandmediahub@hotmail.com</a>.</p>
+</main>
+</body>
+</html>
